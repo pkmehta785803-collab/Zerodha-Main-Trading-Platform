@@ -1,0 +1,199 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: #1d1d1f;
+}
+
+.home-hero h1 {
+  font-size: clamp(2.3rem, 4vw, 3.2rem);
+}
+
+.home-hero p {
+  font-size: 1.1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  max-width: 150px;
+}
+
+.navbar-brand img {
+  width: 110px;
+  height: auto;
+}
+
+.nav-link {
+  margin-left: 40px;
+  font-weight: 500;
+}
+
+.navbar-menu-toggle {
+  display: block;
+  margin-left: auto;
+}
+
+.people-profile-image {
+  width: min(50%, 240px);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#supportHero {
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#supportHero a {
+  color: white;
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 0 150px;
+}
+
+#supportHero input {
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar > .container {
+    flex-wrap: wrap;
+  }
+
+  .navbar-menu-toggle {
+    order: 2;
+  }
+
+  .navbar-collapse {
+    order: 3;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    padding-top: 0.75rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 0.75rem 0;
+  }
+
+  #supportWrapper {
+    margin: 0 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #supportHero input {
+    font-size: 1rem;
+    padding: 16px 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar > .container {
+    flex-wrap: nowrap;
+  }
+
+  .navbar-menu-toggle {
+    order: 3;
+    flex: 0 0 auto;
+    margin-left: 1rem;
+  }
+
+  .navbar-collapse.show {
+    order: 2;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    min-width: 0;
+  }
+
+  .navbar-collapse.show .navbar-nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .navbar-collapse.show .nav-link {
+    margin-left: clamp(12px, 2.1vw, 32px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand img {
+    width: 90px;
+  }
+
+  .people-profile {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    font-size: 1rem !important;
+  }
+
+  .people-profile-image {
+    width: min(65%, 220px);
+  }
+
+  .people-profile-description {
+    padding-top: 0.75rem !important;
+  }
+
+  #supportWrapper {
+    margin: 0 12px;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
